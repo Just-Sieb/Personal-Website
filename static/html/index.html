@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
 
     <meta charset="utf-8">
@@ -8,17 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Programs</title>
+    <title>Justin Siebert Home</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='css/justinsiebert.css')}}" rel="stylesheet">
+    <link href="static/css/modern-business.css" rel="stylesheet">
 
-    <!-- Custom Fonts 
-    <link href="/" rel="stylesheet" type="text/css"> 
-    -->
+    <!-- Custom Fonts -->
+    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,22 +42,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url_for('.root') }}">Justin Siebert</a>
+                <a class="navbar-brand" href="{% url 'index' %}">Justin Siebert</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="navoptions">
-                        <a href="{{ url_for('.about') }}">About</a>
+                        <a href="{% url 'about' %}">About</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('.programming') }}">Programming</a>
+                        <a href="{% url 'Programming' %}">Programming</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('.lego') }}">LEGO</a>
+                        <a href="{% url 'LEGO' %}">LEGO</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('.contact') }}">Contact</a>
+                        <a href="{% url 'contact' %}">Contact</a>
                     </li>
                     <li>
                         <a href="http://blog.justinsiebert.com">Blog</a>
@@ -82,20 +82,48 @@
         </div>
         <!-- /.container -->
     </nav>
-    
+
+    <!-- Page Content -->
     <div class="container">
-    
+        <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{% block Title %}{% endblock %}
-                    <small></small>
-                </h1>
-                
+                <h2 class="page-header">About</h2>
+            </div>
+            <div class="col-lg-12 background-box">
+                <div class="col-md-6">
+                    <div class="imagediv"><img class="image" src="static/pictures/CircleMe.png"></div>
+                </div>
+                <div class="col-md-6 vision">
+                    <h2>I desire to use my technical and leadership skills to make software that empowers people to reach their potential.</h2>
+                </div>
             </div>
         </div>
-        
-        {% block Main %}{% endblock %}
-        
+        <!-- /.row -->
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Programming
+                </h1>
+            </div>
+            <div class="col-lg-12">
+                {% block Programming %}{% endblock %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    LEGO
+                </h1>
+            </div>
+            <div class="col-lg-12">
+                {% block LEGO %}{% endblock %}
+            </div>
+        </div>
+        <!-- /.row -->
+
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -103,8 +131,8 @@
                     <p>Copyright &copy; Justin Siebert 2015</p>
                 </div>
             </div>
-        </footer>    
-        
+        </footer>
+
     </div>
     <!-- /.container -->
 
@@ -122,4 +150,5 @@
     </script>
 
 </body>
+
 </html>

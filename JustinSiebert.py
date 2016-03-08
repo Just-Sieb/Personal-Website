@@ -73,7 +73,8 @@ def program(program_name):
 @app.route('/admin/')
 def admin():
     if not session.get('logged_in'):
-        redirect(url_for('login'))
+        print("Mission Abort")
+        return redirect(url_for('login'))
     return render_template('admin.html')
   
   

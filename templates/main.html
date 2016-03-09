@@ -1,9 +1,9 @@
 {% extends "baseFoundation.html" %}
 
-{% block title %}About{% endblock %}
+{% block Title %}About{% endblock %}
 
 {% block body %}
-<h3>About</h3>
+<h3><a href="{{ url_for('.about') }}">About</a></h3>
 <hr>
 <div class="row row-margin">
     <div class="large-12 columns">
@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<h3>Programs</h3>
+<h3><a href="{{ url_for('.programming') }}">Programs</a></h3>
 <hr>
 <div class="row row-margin">
     <div class="large-12 columns">
@@ -36,7 +36,7 @@
     </div>
 </div>
 
-<h3>LEGO</h3>
+<h3><a href="{{ url_for('.lego') }}">LEGO</a></h3>
 <hr>
 <div class="row row-margin">
     <div class="large-12 columns">

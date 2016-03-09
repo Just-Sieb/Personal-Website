@@ -24,7 +24,12 @@ body {
 *********************************************************************************************/
 
 .navbar {
-    background-color: #203A56 /* Sets Nav bar background color */
+    background-color: #203A56; /* Sets Nav bar background color */
+}
+
+.navbar ul li {
+    background-color: #203A56; /* Sets Nav bar background color */
+    background: #203A56;
 }
 
 .PortfolioText {

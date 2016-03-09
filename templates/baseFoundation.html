@@ -11,38 +11,44 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
 <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://branding.covenanteyes.com/stylesheets/app.css">
+<link href="{{ url_for('static', filename='css/justinsiebert.css')}}" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-    <div class="row">
+    <div class="row navbar">
     <div class="large-12 columns">
-
-    <nav class="top-bar" data-topbar>
+       
+    <div class="top-bar navbar" data-topbar>
         <ul class="title-area">
             <li class="name">
-        <h1><a href="#">Covenant Eyes</a></h1>
-        </li>
+                <h1><a href="{{ url_for('.root') }}">Justin Siebert</a></h1>
+            </li>
             <li class="toggle-topbar menu-icon">
-        <a href="#"><span>menu</span></a>
-        </li>
+                <a href="#"><span>menu</span></a>
+            </li>
         </ul>
-        <section class="top-bar-section">
-        <ul class="left">
+        <section class="top-bar-section navbar">
+        <ul class="right navbar">
             <li>
-                <a href="#">Players</a>
+                <a href="{{ url_for('.about') }}">About</a>
             </li>
             <li>
-                <a href="#">Standings</a>
+                <a href="{{ url_for('.programming') }}">Programming</a>
             </li>
             <li>
-                <a href="#">Games</a>
+                <a href="{{ url_for('.lego') }}">LEGO</a>
+            </li>
+            <li>
+                <a href="{{ url_for('.contact') }}">Contact</a>
+            </li>
+            <li>
+                <a href="http://blog.justinsiebert.com">Blog</a>
             </li>
         </ul>
 
         </section>
-    </nav>
+    </div>
     </div>
     </div>
 
@@ -58,7 +64,7 @@
         <hr>
         <div class="row">
             <div class="large-6 columns">
-            <p>© Justin Siebert</p>
+            <p>Copyright &copy; Justin Siebert 2015 - <a href="{{ url_for('.admin') }}">Admin</a></p>
             </div>
         </div>
     </div>

@@ -33,6 +33,11 @@ def send_static_html(path):
 @app.route('/static/js/<path:path>')
 def send_static_js(path):
     return send_from_directory('static/js', path)
+    
+
+@app.route('/static/pictures/<path:path>')
+def send_static_pictures(path):
+    return send_from_directory('static/pictures', path)
 
 
 @app.route('/')

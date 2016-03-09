@@ -1,10 +1,3 @@
-/*!
- * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Global Styles */
 
 html,
 body {
@@ -17,7 +10,7 @@ body {
 }
 
 /********************************************************************************************
- *    light bluish gray #a3a2a4
+ *   light bluish gray #a3a2a4
  *   dark bluish gray #635f61
  *   orange #fe8a18 
  *                                                                                          *
@@ -25,11 +18,67 @@ body {
 
 .navbar {
     background-color: #203A56; /* Sets Nav bar background color */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
 }
 
 .navbar ul li {
     background-color: #203A56; /* Sets Nav bar background color */
     background: #203A56;
+}
+
+.navbar ul li a {
+    background-color: #203A56; /* Sets Nav bar background color */
+    background: #203A56;
+}
+
+.navbarcolor {
+    background-color: #203A56; /* Sets Nav bar background color */
+}
+
+#navbarcolor li a {
+    background-color: #203A56; /* Sets Nav bar background color */
+    color: #a3a2a4;
+}
+
+#navbarcolor li a:hover {
+    background-color: #FE8A18;
+    color: #635F61;
+}
+
+.box {
+    background-color: #a3a2a4;
+    border-radius: 25px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.boxparent {
+    padding: 5px;
+}
+
+div.row-margin {
+    margin: 25px !important;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.CenterP {
+    position: relative;
+    height: 300px;
+}
+
+.MissionStatement {
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
 }
 
 .PortfolioText {
@@ -44,16 +93,8 @@ body {
     text-align: center;
 }
 
-.navbar-inverse .navbar-brand { 
-    color: #FFF; /* Sets Nav bar text title color */
-}
-
 .navbar-inverse:hover .navbar-brand:hover { 
     color: #FE8A18; /* Sets Nav bar text hover title color */
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #FFF; /* Sets right nav bar nemu options text color */
 }
 
 .navbar-inverse:hover .navbar-nav>li>a:hover {
@@ -83,86 +124,19 @@ body {
 }
 
 .page-header {
-    color: #FFF;
+    color: #a3a2a4;
 }
 
 p {
-    color: #FFF;
+    color: #a3a2a4;
 }
 
 li {
-    color: #fff;
+    color: #a3a2a4;
 }
 
 hr {
     color: #a3a2a4;
 }
 
-/* Home Page Carousel */
-
-header.carousel {
-    height: 50%;
-}
-
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
-    height: 100%;
-}
-
-header.carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-
-/* 404 Page Styles */
-
-.error-404 {
-    font-size: 100px;
-}
-
-/* Pricing Page Styles */
-
-.price {
-    display: block;
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.price sup {
-    top: -20px;
-    left: 2px;
-    font-size: 20px;
-}
-
-.period {
-    display: block;
-    font-style: italic;
-}
-
-/* Footer Styles */
-
-footer {
-    margin: 50px 0;
-}
-
-/* Responsive Styles */
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
-}
+.clearer { clear: both; }

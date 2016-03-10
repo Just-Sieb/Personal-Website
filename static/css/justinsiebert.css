@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
     background-color: #635F61;
 }
 
@@ -140,3 +140,57 @@ hr {
 }
 
 .clearer { clear: both; }
+
+.sidebar {
+    top: 0px;
+    left: 0px;
+    width: 5rem;
+    height: 100%;
+    float: left;
+    background-color: #203A56;
+    position: absolute;
+}
+
+.sidebar>a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.sidebar>a>i {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #a3a2a4;
+}
+
+.sidebar>a>i:hover {
+    color: #FE8A18;
+    background-color: #635F61
+}
+
+.submenu {
+    top: 0px;
+    left: 5rem;
+    width: 5rem;
+    height: 100%;
+    float: left;
+    background-color: #a3a2a4;
+    position: absolute;
+}
+
+.submenu>a>i {
+    width: 80px;
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #203A56;
+}
+
+.submenu>a>i:hover {
+    color: #FE8A18;
+    background-color: #635F61
+}

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en">
@@ -18,40 +17,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
-    <div class="row navbar">
-    <div class="large-12 columns"> 
-    <div class="top-bar navbarcolor" data-topbar>
-        <ul class="title-area navbartext" id="navbarcolor">
-            <li class="name">
-                <h1><a href="{{ url_for('.root') }}">Justin Siebert</a></h1>
-            </li>
-        </ul>
-        <section class="top-bar-section navbarcolor">
-        <ul class="right navbartext navbarcolor" id="navbarcolor">
-            <li>
-                <a href="{{ url_for('.about') }}">About</a>
-            </li>
-            <li>
-                <a href="{{ url_for('.programming') }}">Programming</a>
-            </li>
-            <li>
-                <a href="{{ url_for('.lego') }}">LEGO</a>
-            </li>
-            <li>
-                <a href="{{ url_for('.contact') }}">Contact</a>
-            </li>
-            <li>
-                <a href="http://blog.justinsiebert.com">Blog</a>
-            </li>
-        </ul>
-        </section>
+    <div>
+        <div class="sidebar">
+            <a href="#" class="list-group-item"><i class="fa fa-home fa-4x"></i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-envelope fa-4x"></i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-th-large fa-4x"></i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-code fa-4x"></i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-area-chart fa-4x"></i></i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-pencil-square-o fa-4x"></i></i></a>
+        </div>
     </div>
-    </div>
+    <div>
+        <div class="submenu">
+            <a href="#" class="list-group-item"><i class="fa fa-home"> View</i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-envelope"> Add</i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-th-large"> Edit</i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-code"> This</i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-area-chart"> that</i></a>
+            <a href="#" class="list-group-item"><i class="fa fa-pencil-square-o"> and 2</i></a>
+        </div>
     </div>
 
-
-
-        {% block body %}{% endblock %}
+ <!--       {% block body %}{% endblock %}
 
 
 <footer class="row">
@@ -63,7 +50,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
 <script>

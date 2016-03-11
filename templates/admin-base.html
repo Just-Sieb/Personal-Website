@@ -15,29 +15,39 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<script>
+    function testFunc(element){
+        document.getElementById("test").innerHTML = " test is stupid lalalalalalalalalalala" + element;
+    }
+</script>
+
+
+
 </head>
 <body>
     <div>
         <div class="sidebar">
-            <a href="#" class="list-group-item"><i class="fa fa-home fa-4x"></i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-envelope fa-4x"></i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-th-large fa-4x"></i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-code fa-4x"></i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-area-chart fa-4x"></i></i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-pencil-square-o fa-4x"></i></i></a>
+            <a href="#" class="list-group-item" id="home"><i class="fa fa-home fa-4x"></i></a>
+            <a href="#" class="list-group-item" id="messages"><i class="fa fa-envelope fa-4x"></i></a>
+            <a href="#" class="list-group-item" id="lego"><i class="fa fa-th-large fa-4x"></i></a>
+            <a href="#" class="list-group-item" id="programs"><i class="fa fa-code fa-4x"></i></a>
+            <a href="#" class="list-group-item" id="stats"><i class="fa fa-area-chart fa-4x"></i></i></a>
+            <a href="#" class="list-group-item" id="blog"><i class="fa fa-pencil-square-o fa-4x"></i></i></a>
+        </div>
+        <div class="submenu" id="submenu">
+            <a href="#" class="list-group-item" id="home"><i class="fa fa-home fa-lg"> test 1</i></a>
+            <a href="#" class="list-group-item" id="messages"><i class="fa fa-envelope fa-lg"> test 2</i></a>
+            <a href="#" class="list-group-item" id="lego"><i class="fa fa-th-large fa-lg"> test 3</i></a>
+            <a href="#" class="list-group-item" id="programs"><i class="fa fa-code fa-lg"> test 4</i></a>
+            <a href="#" class="list-group-item" id="stats"><i class="fa fa-area-chart fa-lg"> test 4</i></i></a>
+            <a href="#" class="list-group-item" id="blog"><i class="fa fa-pencil-square-o fa-lg"> test 5</i></i></a>
         </div>
     </div>
-    <div>
-        <div class="submenu">
-            <a href="#" class="list-group-item"><i class="fa fa-home"> View</i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-envelope"> Add</i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-th-large"> Edit</i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-code"> This</i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-area-chart"> that</i></a>
-            <a href="#" class="list-group-item"><i class="fa fa-pencil-square-o"> and 2</i></a>
-        </div>
-    </div>
-
+    
+    
+<p id="test">hello this is a test of jave script and other things</p>
  <!--       {% block body %}{% endblock %}
 
 
@@ -53,8 +63,9 @@
 </footer>-->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="{{ url_for('static', filename='js/justinsiebert.js')}}"></script>
 <script>
-      $(document).foundation();
-    </script>
+    $(document).foundation();
+</script>
 </body>
 </html>

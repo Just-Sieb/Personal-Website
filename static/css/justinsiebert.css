@@ -174,7 +174,7 @@ hr {
 .submenu {
     top: 0px;
     left: 5rem;
-    width: 5rem;
+    width: 10rem;
     height: 100%;
     float: left;
     background-color: #a3a2a4;
@@ -182,15 +182,20 @@ hr {
 }
 
 .submenu>a>i {
-    width: 80px;
+    width: 10rem;
     height: 20px;
     padding: 5px;
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
     color: #203A56;
 }
 
 .submenu>a>i:hover {
     color: #FE8A18;
     background-color: #635F61
+}
+
+#test {
+    color: white;
+    left: 150px;
 }

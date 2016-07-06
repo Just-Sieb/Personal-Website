@@ -2,3 +2,5 @@
 *.jpg
 *.db
 *.db-wal
+*.db-shm
+.vscode

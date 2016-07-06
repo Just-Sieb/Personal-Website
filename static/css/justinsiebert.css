@@ -52,7 +52,9 @@ body {
 .box {
     background-color: #a3a2a4;
     padding: 25px;
+    margin: 10px;
     overflow: hidden;
+    box-shadow: 10px 10px #FE8A18;
 }
 
 .boxparent {
@@ -60,7 +62,7 @@ body {
 }
 
 div.row-margin {
-    margin: 25px !important;
+    margin: 15px !important;
 }
 
 .Main {
@@ -68,7 +70,8 @@ div.row-margin {
 }
 
 .MainPic {
-    width: 100%;
+    height: 100%;
+    width: auto;
 }
 
 h1 span {
@@ -82,7 +85,7 @@ h1 span {
 .row.full {
     max-width: 100%;
     width: 100%;
-    padding: 50px;
+    padding: 15px;
 }
 
 .MainContent {
@@ -104,6 +107,7 @@ h1 span {
 }
 
 .MissionStatement {
+    color: white;
     text-align: center;
     vertical-align: middle;
     position: absolute;
@@ -140,6 +144,12 @@ h3 a:hover {
 
 .title {
     text-align: center;
+    font-weight: bold;
+}
+
+.closing {
+    text-align: center;
+    color: black;
 }
 
 .AboutLists {
@@ -186,10 +196,6 @@ ul li {
 }
 
 .page-header {
-    color: #a3a2a4;
-}
-
-p {
     color: #a3a2a4;
 }
 
@@ -257,14 +263,69 @@ hr {
     background-color: #635F61
 }
 
-@media (min-device-width:320px) {
-        img[data-src-960px] {
-            content: attr(data-src-mobile, url);
+@media only screen and (max-device-width:480px) {
+        .ProfilePic {
+            content:url(http://www.justinsiebert.com/static/img/profile-small.jpg);
         }
     }
 
     @media (min-device-width:960px) {
-        img[data-src-1260px] {
-            content: attr(src, url);
+        img[src] {
+            content: attr(src, url(http://www.justinsiebert.com/static/img/profile.jpg));
         }
     }
+
+#myProgress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #635F61;
+}
+
+#label {
+    text-align: center;
+    line-height: 30px;
+    color: #203A56;
+    font-weight: bold;
+}
+#python {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: #FE8A18;
+}
+
+#c {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #FE8A18;
+}
+
+#HTML {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: #FE8A18;
+}
+
+#CSS {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: #FE8A18;
+}
+
+#javascript {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    background-color: #FE8A18;
+}
+
+#sql {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #FE8A18;
+}

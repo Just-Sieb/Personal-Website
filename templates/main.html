@@ -3,42 +3,44 @@
 {% block Title %}About{% endblock %}
 
 {% block body %}
-<div class="row">
-    <div class="large-12 columns">
-        <h3><a href="{{ url_for('.about') }}">About</a></h3>
-        <hr>
-        <div class="row row-margin">
-            <div class="large-12 columns">
-                <div class="row box middle">
-                    <div class="medium-4 columns CenterP">
-                        <img src="{{ url_for('static', filename='pictures/img.png')}}" class="ProfilePic round">
-                    </div>
-                    <div class="medium-8 columns CenterP">
-                        <h2 class="MissionStatement CenterC">I desire to use my technical and leadership skills to develop software that empowers people to reach their potential</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <h3><a href="{{ url_for('.programming') }}">Programs</a></h3>
+<div class="Main">
+<div class="MainPic">
+    <img src="http://www.justinsiebert.com/static/img/profile.jpg" class="ProfilePic">
+    <h1 class="MissionStatement">
+        <span>I desire to use my technical and leadership skills to develop software that empowers people to reach their potential</span>
+    </h1>
+</div>
+<div class="row full">
+    <div id="about">
+        <h3><a href="#about">About</a></h3>
         <hr>
         <div class="row row-margin">
             <div class="large-12 columns">
                 <div class="row middle">
                     <div class="large-4 columns boxparent">
-                        <div class="box"><h4>bla bla bla</h4></div>
+                        <div class="box"><h4 class="title">Education</h4>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="large-4 columns boxparent">
-                        <div class="box"><h4>bla bla bla</h4></div>
+                        <div class="box"><h4 class="title">Skills</h4>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="large-4 columns boxparent">
-                        <div class="box"><h4>bla bla bla</h4></div>
+                        <div class="box"><h4 class="title">Experience</h4></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <h3><a href="{{ url_for('.lego') }}">LEGO</a></h3>
+    </div>
+    <div id="#programming">
+        <h3><a href="#programming">Programming</a></h3>
         <hr>
         <div class="row row-margin">
             <div class="large-12 columns">
@@ -56,5 +58,25 @@
             </div>
         </div>
     </div>
+    <div id="lego">
+        <h3><a href="#lego">LEGO</a></h3>
+        <hr>
+        <div class="row row-margin">
+            <div class="large-12 columns">
+                <div class="row middle">
+                    <div class="large-4 columns boxparent">
+                        <div class="box"><h4>bla bla bla</h4></div>
+                    </div>
+                    <div class="large-4 columns boxparent">
+                        <div class="box"><h4>bla bla bla</h4></div>
+                    </div>
+                    <div class="large-4 columns boxparent">
+                        <div class="box"><h4>bla bla bla</h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 {% endblock %}

@@ -51,7 +51,6 @@ body {
 
 .box {
     background-color: #a3a2a4;
-    border-radius: 25px;
     padding: 25px;
     overflow: hidden;
 }
@@ -62,6 +61,29 @@ body {
 
 div.row-margin {
     margin: 25px !important;
+}
+
+.Main {
+    margin-top: 45px;
+}
+
+.MainPic {
+    width: 100%;
+}
+
+.row.full {
+    max-width: 100%;
+    width: 100%;
+    padding: 50px;
+}
+
+.MainContent {
+    width: 100%;
+}
+
+.ProfilePic {
+    position: relative;
+    width: 100%;
 }
 
 .round {
@@ -77,8 +99,8 @@ div.row-margin {
     text-align: center;
     vertical-align: middle;
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%)
+    top: 5px;
+    width: 100%;
 }
 
 .PortfolioText {
@@ -90,6 +112,10 @@ div.row-margin {
 }
 
 .PortfolioText>h3 {
+    text-align: center;
+}
+
+.title {
     text-align: center;
 }
 

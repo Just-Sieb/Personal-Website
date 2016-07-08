@@ -51,7 +51,7 @@ body {
 
 .box {
     background-color: #203A56;
-    padding: 25px;
+    padding: 15px;
     margin: 10px;
     overflow: hidden;
     box-shadow: 10px 10px #A61436;
@@ -70,8 +70,11 @@ div.row-margin {
 }
 
 .MainPic {
-    height: 100%;
-    width: auto;
+    width: 100%;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
 }
 
 .row.full {
@@ -107,13 +110,17 @@ div.row-margin {
     text-align: center;
     vertical-align: middle;
     position: absolute;
-    top: 25px;
     width: 75%;
     font-size: 42px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     padding: 25px;
-
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 20%;
 }
 
 h3 a {
@@ -154,9 +161,23 @@ h3 a:hover {
 .AboutLists {
     color: #fdfdfd;
     text-align: left;
+    list-style-type:none;
 }
 .AboutLists li {
     color: #fdfdfd;
+}
+
+.InTextLink {
+    color: white;
+    text-decoration: underline;
+}
+
+.links p {
+    text-align: right;
+}
+
+.links a {
+    color: #203A56;
 }
 
 .SocialMediaLinks {
@@ -284,56 +305,85 @@ hr {
 #label {
     text-align: center;
     line-height: 30px;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 #python {
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 100%;
     background-color: #A61534;
 }
 
 #c {
     position: absolute;
-    width: 80%;
+    width: 70%;
     height: 100%;
     background-color: #A61436;
 }
 
 #HTML {
     position: absolute;
-    width: 80%;
+    width: 75%;
     height: 100%;
     background-color: #A61436;
 }
 
 #CSS {
     position: absolute;
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: #A61436;
 }
 
 #javascript {
     position: absolute;
-    width: 75%;
+    width: 65%;
     height: 100%;
     background-color: #A61436;
 }
 
 #sql {
     position: absolute;
-    width: 70%;
+    width: 55%;
     height: 100%;
     background-color: #A61436;
-}
-
-.scale {
-
 }
 
 .scale p {
     color: #fdfdfd;
     text-align: center;
+}
+
+.HoverText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.HoveText::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+#myProgress:hover .HoverText {
+    visibility: visible;
+}
+
+.copyright {
+    color: #203A56; 
 }

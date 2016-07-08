@@ -6,7 +6,7 @@ body {
 
 body {
     
-    background-color: #635F61;
+    background-color: #fff;
 }
 
 /********************************************************************************************
@@ -41,20 +41,20 @@ body {
 
 #navbarcolor li a {
     background-color: #203A56; /* Sets Nav bar background color */
-    color: #a3a2a4;
+    color: #fdfdfd;
 }
 
 #navbarcolor li a:hover {
-    background-color: #FE8A18;
-    color: #635F61;
+    background-color: #A61436;
+    color: #fdfdfd;
 }
 
 .box {
-    background-color: #a3a2a4;
+    background-color: #203A56;
     padding: 25px;
     margin: 10px;
     overflow: hidden;
-    box-shadow: 10px 10px #FE8A18;
+    box-shadow: 10px 10px #A61436;
 }
 
 .boxparent {
@@ -72,14 +72,6 @@ div.row-margin {
 .MainPic {
     height: 100%;
     width: auto;
-}
-
-h1 span {
-    color: white;
-    /*letter-spacing: -1px;
-    /*background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);*/
-    padding: 5px;
 }
 
 .row.full {
@@ -106,15 +98,21 @@ h1 span {
     height: 300px;
 }
 
+.PicText {
+    margin: 0px;
+}
+
 .MissionStatement {
-    color: white;
+    color: #fdfdfd;
     text-align: center;
     vertical-align: middle;
     position: absolute;
     top: 25px;
-    width: 100%;
+    width: 75%;
+    font-size: 42px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
 
 }
 
@@ -125,7 +123,7 @@ h3 a {
 }
 
 h3 a:hover {
-    color: #FE8A18;
+    color: #A61436;
     font-weight: bold;
     
 }
@@ -143,18 +141,30 @@ h3 a:hover {
 }
 
 .title {
+    color: white;
     text-align: center;
     font-weight: bold;
 }
 
 .closing {
     text-align: center;
-    color: black;
+    color: #fdfdfd;
 }
 
 .AboutLists {
-    color: black;
+    color: #fdfdfd;
+    text-align: left;
+}
+.AboutLists li {
+    color: #fdfdfd;
+}
+
+.SocialMediaLinks {
+    color: #fdfdfd;
     text-align: center;
+}
+.SocialMediaLinks li {
+    color: #fdfdfd;
 }
 
 ul li {
@@ -162,29 +172,15 @@ ul li {
 }
 
 .AboutText {
-    color: black;
+    color: #fdfdfd;
 }
 
 .navbar-inverse:hover .navbar-brand:hover { 
-    color: #FE8A18; /* Sets Nav bar text hover title color */
+    color: #A61436; /* Sets Nav bar text hover title color */
 }
 
 .navbar-inverse:hover .navbar-nav>li>a:hover {
-    color: #FE8A18; /* Sets right nav bar nemu options hover text color */
-}
-
-.panel-default {
-    border-color: #635F61;
-}
-
-.panel-default>.panel-heading {
-    background-color: #FE8A18;
-    border-color: #635F61;
-}
-
-.panel-default>.panel-body {
-    background-color: #a3a2a4;
-    border-color: #635F61;
+    color: #A61436; /* Sets right nav bar nemu options hover text color */
 }
 
 .img-portfolio {
@@ -204,10 +200,13 @@ li {
 }
 
 hr {
-    color: #a3a2a4;
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #203A56;/* old IE */
+    background-color: #203A56; /* Modern Browsers */
+    border-color: #203A56;
 }
-
-.clearer { clear: both; }
 
 .sidebar {
     top: 0px;
@@ -235,7 +234,7 @@ hr {
 }
 
 .sidebar>a>i:hover {
-    color: #FE8A18;
+    color: rgb(88, 1, 16);
     background-color: #635F61
 }
 
@@ -259,7 +258,7 @@ hr {
 }
 
 .submenu>a>i:hover {
-    color: #FE8A18;
+    color: rgb(88, 1, 16);
     background-color: #635F61
 }
 
@@ -279,53 +278,62 @@ hr {
     position: relative;
     width: 100%;
     height: 30px;
-    background-color: #635F61;
+    background-color: lightgray;
 }
 
 #label {
     text-align: center;
     line-height: 30px;
-    color: #203A56;
+    color: black;
     font-weight: bold;
 }
 #python {
     position: absolute;
     width: 90%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61534;
 }
 
 #c {
     position: absolute;
     width: 80%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61436;
 }
 
 #HTML {
     position: absolute;
     width: 80%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61436;
 }
 
 #CSS {
     position: absolute;
     width: 60%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61436;
 }
 
 #javascript {
     position: absolute;
     width: 75%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61436;
 }
 
 #sql {
     position: absolute;
     width: 70%;
     height: 100%;
-    background-color: #FE8A18;
+    background-color: #A61436;
+}
+
+.scale {
+
+}
+
+.scale p {
+    color: #fdfdfd;
+    text-align: center;
 }

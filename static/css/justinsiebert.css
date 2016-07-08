@@ -285,7 +285,7 @@ hr {
 
 @media only screen and (max-device-width:480px) {
         .ProfilePic {
-            content:url(http://www.justinsiebert.com/static/img/profile-small.jpg);
+            content:url(http://www.justinsiebert.com/static/img/profile-mobile.jpg);
         }
     }
 
